@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STS Major Exam Practice (70 Items)</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--ink:#1f2937;--muted:#6b7280;--acc:#2563eb;--ok:#16a34a;--bad:#dc2626}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+    header{position:sticky;top:0;background:linear-gradient(180deg,#fff,rgba(255,255,255,.92));backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid #e5e7eb;z-index:10}
+    .wrap{max-width:1000px;margin:0 auto;padding:18px}
+    h1{font-size:24px;margin:0}
+    .sub{color:var(--muted);font-size:14px}
+    .nav{display:flex;gap:8px;margin-top:12px}
+    .chip{padding:8px 12px;border-radius:999px;background:#eef2ff;color:#1e40af;font-weight:600;border:1px solid #c7d2fe;cursor:pointer}
+    .chip[aria-current="true"]{background:#1e40af;color:#fff}
+    main{max-width:1000px;margin:20px auto;padding:0 18px}
+    section{display:none}
+    section.active{display:block}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:14px;box-shadow:0 8px 24px rgba(16,24,40,.06);padding:18px;margin:14px 0}
+    .qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+    .qno{font-weight:700}
+    .result{margin-top:8px;font-weight:700}
+    .ok{color:var(--ok)}
+    .bad{color:var(--bad)}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    button{border:none;border-radius:10px;padding:8px 12px;font-weight:600;cursor:pointer}
+    .check{background:var(--acc);color:#fff}
+    .reveal{background:#111827;color:#fff}
+    .next, .prev{background:#e5e7eb}
+    input[type="text"], textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #d1d5db}
+    textarea{min-height:70px}
+    .choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}
+    label.choice{border:1px solid #d1d5db;border-radius:10px;padding:10px;display:flex;align-items:center;gap:8px;cursor:pointer}
+    .footer-nav{display:flex;justify-content:space-between;gap:10px;margin:24px 0}
+    .muted{color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Science, Technology & Society — 70‑Item Practice</h1>
+      <div class="sub">Covers Module 1 (Nature & Relationship of STS) and Module 2 (Historical Development). Instant feedback + answer reveal.</div>
+      <div class="nav">
+        <button class="chip" data-target="mc" aria-current="true">Part 1: Multiple Choice (10)</button>
+        <button class="chip" data-target="id">Part 2: Identification (40)</button>
+        <button class="chip" data-target="enum">Part 3: Enumeration (20)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= PART 1: MULTIPLE CHOICE (10) ================= -->
+    <section id="mc" class="active">
+      <!-- Each MC card uses data-answer with the correct option letter -->
+
+      <div class="card" data-type="mc" data-answer="B">
+        <div class="qhead"><div class="qno">MC 1.</div><div class="muted">Ancient • Mesopotamia</div></div>
+        <div class="qtxt">Which civilization developed the first writing system called <em>Cuneiform</em>?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc1" value="A"> Egyptian</label>
+          <label class="choice"><input type="radio" name="mc1" value="B"> Sumerian</label>
+          <label class="choice"><input type="radio" name="mc1" value="C"> Roman</label>
+          <label class="choice"><input type="radio" name="mc1" value="D"> Greek</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="C">
+        <div class="qhead"><div class="qno">MC 2.</div><div class="muted">Renaissance</div></div>
+        <div class="qtxt">What invention did Johannes Gutenberg introduce?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc2" value="A"> Telegraph</label>
+          <label class="choice"><input type="radio" name="mc2" value="B"> Compass</label>
+          <label class="choice"><input type="radio" name="mc2" value="C"> Printing Press</label>
+          <label class="choice"><input type="radio" name="mc2" value="D"> Watermill</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="D">
+        <div class="qhead"><div class="qno">MC 3.</div><div class="muted">Modern • Industry</div></div>
+        <div class="qtxt">Which revolution introduced machines like the spinning jenny and steam engine?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc3" value="A"> Scientific Revolution</label>
+          <label class="choice"><input type="radio" name="mc3" value="B"> Age of Enlightenment</label>
+          <label class="choice"><input type="radio" name="mc3" value="C"> Renaissance</label>
+          <label class="choice"><input type="radio" name="mc3" value="D"> Industrial Revolution</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="A">
+        <div class="qhead"><div class="qno">MC 4.</div><div class="muted">Ancient • Egypt</div></div>
+        <div class="qtxt">What writing material did Egyptians use that was lighter than clay tablets?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc4" value="A"> Papyrus</label>
+          <label class="choice"><input type="radio" name="mc4" value="B"> Parchment</label>
+          <label class="choice"><input type="radio" name="mc4" value="C"> Codex</label>
+          <label class="choice"><input type="radio" name="mc4" value="D"> Bamboo strips</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="C">
+        <div class="qhead"><div class="qno">MC 5.</div><div class="muted">Medieval</div></div>
+        <div class="qtxt">Which period is also known as the Dark Age or Age of Faith?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc5" value="A"> Modern Period</label>
+          <label class="choice"><input type="radio" name="mc5" value="B"> Ancient Period</label>
+          <label class="choice"><input type="radio" name="mc5" value="C"> Medieval Period</label>
+          <label class="choice"><input type="radio" name="mc5" value="D"> Renaissance</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="B">
+        <div class="qhead"><div class="qno">MC 6.</div><div class="muted">Greek Thought</div></div>
+        <div class="qtxt">Which Greek philosopher is widely called the “Father of Logic”?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc6" value="A"> Archimedes</label>
+          <label class="choice"><input type="radio" name="mc6" value="B"> Aristotle</label>
+          <label class="choice"><input type="radio" name="mc6" value="C"> Socrates</label>
+          <label class="choice"><input type="radio" name="mc6" value="D"> Plato</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="A">
+        <div class="qhead"><div class="qno">MC 7.</div><div class="muted">Rome • Records</div></div>
+        <div class="qtxt">The Roman innovation that stacked sheets into book form is called the _____.</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc7" value="A"> Codex</label>
+          <label class="choice"><input type="radio" name="mc7" value="B"> Scroll</label>
+          <label class="choice"><input type="radio" name="mc7" value="C"> Gazette</label>
+          <label class="choice"><input type="radio" name="mc7" value="D"> Manuscript</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="D">
+        <div class="qhead"><div class="qno">MC 8.</div><div class="muted">China • Navigation</div></div>
+        <div class="qtxt">Which Chinese invention transformed sea navigation?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc8" value="A"> Water clock</label>
+          <label class="choice"><input type="radio" name="mc8" value="B"> Paper</label>
+          <label class="choice"><input type="radio" name="mc8" value="C"> Gunpowder</label>
+          <label class="choice"><input type="radio" name="mc8" value="D"> Compass</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="C">
+        <div class="qhead"><div class="qno">MC 9.</div><div class="muted">Scientific Revolution</div></div>
+        <div class="qtxt">Who proposed the heliocentric model that displaced the Ptolemaic system?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc9" value="A"> Galileo Galilei</label>
+          <label class="choice"><input type="radio" name="mc9" value="B"> Isaac Newton</label>
+          <label class="choice"><input type="radio" name="mc9" value="C"> Nicolaus Copernicus</label>
+          <label class="choice"><input type="radio" name="mc9" value="D"> Johannes Kepler</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="mc" data-answer="B">
+        <div class="qhead"><div class="qno">MC 10.</div><div class="muted">19th Century • Comms</div></div>
+        <div class="qtxt">Which technology enabled reliable long‑distance electrical communication?</div>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mc10" value="A"> Telephone</label>
+          <label class="choice"><input type="radio" name="mc10" value="B"> Telegraph</label>
+          <label class="choice"><input type="radio" name="mc10" value="C"> Radio</label>
+          <label class="choice"><input type="radio" name="mc10" value="D"> Television</label>
+        </div>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="footer-nav"><span></span><button class="next">Go to Part 2 (Identification)</button></div>
+    </section>
+
+    <!-- ================= PART 2: IDENTIFICATION (40) ================= -->
+    <section id="id">
+      <!-- Each ID card uses data-answer with the single correct term/phrase -->
+      
+      <div class="card" data-type="id" data-answer="Science">
+        <div class="qhead"><div class="qno">ID 1.</div><div class="muted">Module 1 • Definition</div></div>
+        <div class="qtxt">Systematic study of natural phenomena; organized body of knowledge using the scientific method.</div>
+        <input type="text" placeholder="Type your answer..." />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Technology">
+        <div class="qhead"><div class="qno">ID 2.</div><div class="muted">Module 1 • Definition</div></div>
+        <div class="qtxt">Application of scientific knowledge for practical purposes (product, design, or process) that affects quality of life.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Society">
+        <div class="qhead"><div class="qno">ID 3.</div><div class="muted">Module 1 • Definition</div></div>
+        <div class="qtxt">Group of individuals with common interests, culture, and institutions; from Latin <em>societas</em>.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="STS">
+        <div class="qhead"><div class="qno">ID 4.</div><div class="muted">Module 1 • Course</div></div>
+        <div class="qtxt">Interdisciplinary study of how social, political, and cultural values affect research and innovation, and how these affect society.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Techne">
+        <div class="qhead"><div class="qno">ID 5.</div><div class="muted">Module 1 • Etymology</div></div>
+        <div class="qtxt">Greek root of the word technology meaning “art, craft, or skill”.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Cuneiform">
+        <div class="qhead"><div class="qno">ID 6.</div><div class="muted">Mesopotamia</div></div>
+        <div class="qtxt">Earliest known writing system developed by the Sumerians.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Uruk">
+        <div class="qhead"><div class="qno">ID 7.</div><div class="muted">Mesopotamia</div></div>
+        <div class="qtxt">Famed Sumerian city often cited as one of the world’s first true cities.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Akkadian">
+        <div class="qhead"><div class="qno">ID 8.</div><div class="muted">Mesopotamia</div></div>
+        <div class="qtxt">Empire that succeeded Sumer and unified much of Mesopotamia under Sargon.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Assyrians">
+        <div class="qhead"><div class="qno">ID 9.</div><div class="muted">Mesopotamia</div></div>
+        <div class="qtxt">People noted for military technologies and engineering units in Mesopotamia.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Babylonians">
+        <div class="qhead"><div class="qno">ID 10.</div><div class="muted">Mesopotamia</div></div>
+        <div class="qtxt">Civilization known for astronomy and mathematics (e.g., observations of Jupiter).</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Papyrus">
+        <div class="qhead"><div class="qno">ID 11.</div><div class="muted">Egypt</div></div>
+        <div class="qtxt">Plant-based writing material widely used along the Nile.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Hieroglyphics">
+        <div class="qhead"><div class="qno">ID 12.</div><div class="muted">Egypt</div></div>
+        <div class="qtxt">Symbolic writing system of ancient Egypt.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Pyramids">
+        <div class="qhead"><div class="qno">ID 13.</div><div class="muted">Egypt</div></div>
+        <div class="qtxt">Monumental tomb structures that showcased engineering and labor organization in ancient Egypt.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Columns">
+        <div class="qhead"><div class="qno">ID 14.</div><div class="muted">Greece</div></div>
+        <div class="qtxt">Architectural elements in Doric, Ionic, and Corinthian styles.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Aristotle">
+        <div class="qhead"><div class="qno">ID 15.</div><div class="muted">Greece • Philosophy</div></div>
+        <div class="qtxt">Greek philosopher associated with logic and biology; student of Plato and tutor to Alexander.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Archimedes">
+        <div class="qhead"><div class="qno">ID 16.</div><div class="muted">Greece • Science</div></div>
+        <div class="qtxt">Hellenistic mathematician linked with buoyancy principle and war machines.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Roman numerals">
+        <div class="qhead"><div class="qno">ID 17.</div><div class="muted">Rome</div></div>
+        <div class="qtxt">Number system used in ancient Rome (I, V, X, L, C, D, M).</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Gazette">
+        <div class="qhead"><div class="qno">ID 18.</div><div class="muted">Rome • Communication</div></div>
+        <div class="qtxt">Public bulletin or early newspaper of the Roman Empire.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Codex">
+        <div class="qhead"><div class="qno">ID 19.</div><div class="muted">Rome • Books</div></div>
+        <div class="qtxt">Stacked pages bound on one side; precursor to the modern book.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Compass">
+        <div class="qhead"><div class="qno">ID 20.</div><div class="muted">China • Navigation</div></div>
+        <div class="qtxt">Chinese device that enabled orientation at sea using Earth’s magnetic field.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Gunpowder">
+        <div class="qhead"><div class="qno">ID 21.</div><div class="muted">China • Warfare</div></div>
+        <div class="qtxt">Explosive mixture developed in China that transformed warfare.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Woodblock printing">
+        <div class="qhead"><div class="qno">ID 22.</div><div class="muted">China • Printing</div></div>
+        <div class="qtxt">Technique of pressing carved wooden blocks inked on paper or silk.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Medieval Period">
+        <div class="qhead"><div class="qno">ID 23.</div><div class="muted">Timeline</div></div>
+        <div class="qtxt">Historical era often called the Age of Faith or Dark Age.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Watermill">
+        <div class="qhead"><div class="qno">ID 24.</div><div class="muted">Medieval • Power</div></div>
+        <div class="qtxt">Hydropower machine widely used for grinding grain in medieval Europe.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Windmill">
+        <div class="qhead"><div class="qno">ID 25.</div><div class="muted">Medieval • Power</div></div>
+        <div class="qtxt">Machine that converts wind energy to mechanical work; spread widely in the medieval period.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Universities">
+        <div class="qhead"><div class="qno">ID 26.</div><div class="muted">Medieval • Education</div></div>
+        <div class="qtxt">Institutions of higher learning that rose in the Middle Ages to organize scholarship and degrees.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Illuminated manuscripts">
+        <div class="qhead"><div class="qno">ID 27.</div><div class="muted">Medieval • Books</div></div>
+        <div class="qtxt">Decorated handwritten texts produced by monks on parchment or vellum.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Renaissance">
+        <div class="qhead"><div class="qno">ID 28.</div><div class="muted">Timeline</div></div>
+        <div class="qtxt">Period known as “rebirth” of arts and learning in Europe after the Middle Ages.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Heliocentric model">
+        <div class="qhead"><div class="qno">ID 29.</div><div class="muted">Scientific Revolution</div></div>
+        <div class="qtxt">Astronomical theory placing the Sun at the center of the solar system.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Galileo Galilei">
+        <div class="qhead"><div class="qno">ID 30.</div><div class="muted">Scientific Revolution</div></div>
+        <div class="qtxt">Scientist who used the telescope to make astronomical observations and supported heliocentrism.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Isaac Newton">
+        <div class="qhead"><div class="qno">ID 31.</div><div class="muted">Physics</div></div>
+        <div class="qtxt">Author of <em>Philosophiae Naturalis Principia Mathematica</em>; formulated laws of motion and universal gravitation.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="John Locke">
+        <div class="qhead"><div class="qno">ID 32.</div><div class="muted">Enlightenment</div></div>
+        <div class="qtxt">Thinker who wrote <em>An Essay Concerning Human Understanding</em> and advanced ideas of liberty and empiricism.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Spinning Jenny">
+        <div class="qhead"><div class="qno">ID 33.</div><div class="muted">Industrial Revolution</div></div>
+        <div class="qtxt">Multi‑spindle spinning frame that accelerated textile production in factories.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Steam engine">
+        <div class="qhead"><div class="qno">ID 34.</div><div class="muted">Industrial Revolution</div></div>
+        <div class="qtxt">Prime mover improved by James Watt; powered factories, mines, and locomotives.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Railway">
+        <div class="qhead"><div class="qno">ID 35.</div><div class="muted">Industrial Revolution • Transport</div></div>
+        <div class="qtxt">Overland transport system using steam locomotives and tracks that transformed trade and mobility.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Telegraph">
+        <div class="qhead"><div class="qno">ID 36.</div><div class="muted">19th Century • Comms</div></div>
+        <div class="qtxt">Electrical signaling device associated with Samuel Morse for rapid long‑distance messaging.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Mathematics">
+        <div class="qhead"><div class="qno">ID 37.</div><div class="muted">Module 1 • Language</div></div>
+        <div class="qtxt">The principal language of science and technical description.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Scientific method">
+        <div class="qhead"><div class="qno">ID 38.</div><div class="muted">Module 1 • Method</div></div>
+        <div class="qtxt">Orderly process of observation, hypothesis, testing, and theory‑building used to obtain knowledge.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Explanation">
+        <div class="qhead"><div class="qno">ID 39.</div><div class="muted">Module 1 • Goal of Science</div></div>
+        <div class="qtxt">One core goal of science along with understanding, prediction, and control.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="id" data-answer="Skepticism">
+        <div class="qhead"><div class="qno">ID 40.</div><div class="muted">Module 1 • Attitude</div></div>
+        <div class="qtxt">Organized and systematic _______ is an essential scientific attitude.</div>
+        <input type="text" />
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="footer-nav"><button class="prev">Back to Part 1</button><button class="next">Go to Part 3 (Enumeration)</button></div>
+    </section>
+
+    <!-- ================= PART 3: ENUMERATION (20) ================= -->
+    <section id="enum">
+      <!-- For enumeration, data-answer holds comma-separated correct items; order-insensitive check -->
+
+      <div class="card" data-type="enum" data-answer="Doric, Ionic, Corinthian">
+        <div class="qhead"><div class="qno">EN 1.</div><div class="muted">Greece • Architecture</div></div>
+        <div class="qtxt">Enumerate the three types of Greek columns.</div>
+        <textarea placeholder="Separate items with commas..."></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Paleolithic, Mesolithic, Neolithic">
+        <div class="qhead"><div class="qno">EN 2.</div><div class="muted">Prehistoric</div></div>
+        <div class="qtxt">Enumerate the three Stone Age periods.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Sumerian, Babylonian, Assyrian, Akkadian">
+        <div class="qhead"><div class="qno">EN 3.</div><div class="muted">Mesopotamia</div></div>
+        <div class="qtxt">Enumerate the four major Mesopotamian civilizations.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Science, Technology, Society">
+        <div class="qhead"><div class="qno">EN 4.</div><div class="muted">Module 1</div></div>
+        <div class="qtxt">Name the three main components interacting in STS.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Content, Method, Attitude, Goals, Language, Tools, Community, Process">
+        <div class="qhead"><div class="qno">EN 5.</div><div class="muted">Module 1 • Framework</div></div>
+        <div class="qtxt">Enumerate the eight descriptors of science (e.g., content, method, …) mentioned in the lecture.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Inventions, Processes, Profession, Societal enterprise">
+        <div class="qhead"><div class="qno">EN 6.</div><div class="muted">Module 1 • Tech Views</div></div>
+        <div class="qtxt">List the four ways technology can be viewed (per the slides).</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Explanation, Understanding, Prediction, Control">
+        <div class="qhead"><div class="qno">EN 7.</div><div class="muted">Module 1 • Goals</div></div>
+        <div class="qtxt">List the core goals of science.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Sci-Tech, Tech-Soc, Sci-Soc">
+        <div class="qhead"><div class="qno">EN 8.</div><div class="muted">Module 1 • Interaction</div></div>
+        <div class="qtxt">Enumerate the three interaction pairs used in the activity template.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Paper, Compass, Gunpowder, Woodblock printing">
+        <div class="qhead"><div class="qno">EN 9.</div><div class="muted">China</div></div>
+        <div class="qtxt">List four notable Chinese inventions mentioned in class.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Aqueducts, Roads, Amphitheaters, Codex, Gazette">
+        <div class="qhead"><div class="qno">EN 10.</div><div class="muted">Rome</div></div>
+        <div class="qtxt">Enumerate at least four Roman contributions (technology/communication/infrastructure).</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Copernicus, Galileo, Kepler, Newton">
+        <div class="qhead"><div class="qno">EN 11.</div><div class="muted">Scientific Revolution</div></div>
+        <div class="qtxt">Enumerate four key figures of the Scientific Revolution.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Reason, Freedom, Individual rights">
+        <div class="qhead"><div class="qno">EN 12.</div><div class="muted">Enlightenment</div></div>
+        <div class="qtxt">List three values emphasized during the Age of Enlightenment.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Spinning Jenny, Power loom, Steam engine">
+        <div class="qhead"><div class="qno">EN 13.</div><div class="muted">Industrial Revolution</div></div>
+        <div class="qtxt">Name three hallmark inventions from the First Industrial Revolution.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Steamship, Railway">
+        <div class="qhead"><div class="qno">EN 14.</div><div class="muted">Industrial • Transport</div></div>
+        <div class="qtxt">Give two transportation advancements linked to the Industrial Revolution.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Discipline, Education, Credentials, Careers">
+        <div class="qhead"><div class="qno">EN 15.</div><div class="muted">Module 1 • Community</div></div>
+        <div class="qtxt">Enumerate four aspects of the scientific community described in the slides.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Tools, Instruments, Technologies">
+        <div class="qhead"><div class="qno">EN 16.</div><div class="muted">Module 1 • Tools</div></div>
+        <div class="qtxt">List the items science uses to extend observation and measurement.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Product, Process, Design">
+        <div class="qhead"><div class="qno">EN 17.</div><div class="muted">Module 1 • Technology</div></div>
+        <div class="qtxt">Give three ways the slides describe technology’s outputs or forms.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Observation, Hypothesis, Experiment, Theory">
+        <div class="qhead"><div class="qno">EN 18.</div><div class="muted">Module 1 • Method</div></div>
+        <div class="qtxt">List four core steps often associated with the scientific method.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Early Modern, Mid Modern, Contemporary Modern">
+        <div class="qhead"><div class="qno">EN 19.</div><div class="muted">Modern Period</div></div>
+        <div class="qtxt">Enumerate the three major divisions of the Modern period referenced in class.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="card" data-type="enum" data-answer="Domestication, Pottery‑making, Calendar‑keeping">
+        <div class="qhead"><div class="qno">EN 20.</div><div class="muted">Neolithic</div></div>
+        <div class="qtxt">Give three innovations associated with the Neolithic transition.</div>
+        <textarea></textarea>
+        <div class="controls"><button class="check">Check</button><button class="reveal">Reveal Answer</button></div>
+        <div class="result"></div>
+      </div>
+
+      <div class="footer-nav"><button class="prev">Back to Part 2</button><span></span></div>
+    </section>
+  </main>
+
+  <script>
+    // ---------- Utility helpers ----------
+    const $ = (sel, root=document) => root.querySelector(sel);
+    const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+    // Pagination / section chips
+    const sections = { mc: $('#mc'), id: $('#id'), enum: $('#enum') };
+    const chips = $$('.chip');
+    chips.forEach(ch => ch.addEventListener('click', () => goSection(ch.dataset.target)));
+
+    const goSection = key => {
+      Object.values(sections).forEach(s => s.classList.remove('active'));
+      sections[key].classList.add('active');
+      chips.forEach(c => c.setAttribute('aria-current', String(c.dataset.target===key)));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // Footer next/prev buttons
+    $$('#mc .next').forEach(b=>b.addEventListener('click', ()=>goSection('id')));
+    $$('#id .prev').forEach(b=>b.addEventListener('click', ()=>goSection('mc')));
+    $$('#id .next').forEach(b=>b.addEventListener('click', ()=>goSection('enum')));
+    $$('#enum .prev').forEach(b=>b.addEventListener('click', ()=>goSection('id')));
+
+    // Normalize strings (case/whitespace/punctuation tolerant)
+    const normalize = s => (s||'')
+      .toString()
+      .trim()
+      .toLowerCase()
+      .replace(/[\s\u00A0]+/g,' ')
+      .replace(/[\.\!\?]/g,'');
+
+    // Split list answers into sets, order-insensitive
+    const toSet = s => new Set(normalize(s).split(',').map(x=>x.trim()).filter(Boolean));
+
+    // Checkers
+    const checkCard = card => {
+      const type = card.dataset.type;
+      const ans = card.dataset.answer || '';
+      const result = $('.result', card);
+
+      if (type === 'mc') {
+        const selected = $('input[type="radio"]:checked', card);
+        if (!selected) { result.textContent = 'Select an option first.'; result.className='result bad'; return; }
+        const ok = normalize(selected.value) === normalize(ans);
+        result.textContent = ok ? 'Correct!' : `Wrong! Correct Answer: ${ans}`;
+        result.className = 'result ' + (ok ? 'ok' : 'bad');
+        return;
+      }
+
+      if (type === 'id') {
+        const input = $('input[type="text"]', card);
+        const ok = normalize(input.value) === normalize(ans);
+        result.textContent = ok ? 'Correct!' : `Wrong! Correct Answer: ${ans}`;
+        result.className = 'result ' + (ok ? 'ok' : 'bad');
+        return;
+      }
+
+      if (type === 'enum') {
+        const ta = $('textarea', card);
+        const user = toSet(ta.value);
+        const correct = toSet(ans);
+        const allMatch = [...correct].every(x => user.has(x));
+        // Partial scoring hint
+        const got = [...user].filter(x => correct.has(x));
+        const miss = [...correct].filter(x => !user.has(x));
+        if (allMatch) {
+          result.textContent = 'Correct!';
+          result.className = 'result ok';
+        } else {
+          result.innerHTML = `Partially correct (${got.length}/${correct.size}). Missing: ${miss.join(', ')}. <br>Correct Answer: ${ans}`;
+          result.className = 'result bad';
+        }
+        return;
+      }
+    };
+
+    const revealCard = card => {
+      const result = $('.result', card);
+      result.textContent = `Correct Answer: ${card.dataset.answer || ''}`;
+      result.className = 'result';
+    };
+
+    // Attach listeners to every card
+    $$('.card').forEach(card => {
+      $('.check', card)?.addEventListener('click', () => checkCard(card));
+      $('.reveal', card)?.addEventListener('click', () => revealCard(card));
+    });
+  </script>
+</body>
+</html>
